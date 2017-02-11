@@ -1,2 +1,2 @@
 # nfq
-Knygų bazės projektas skirtas stojimui į NFQ akademiją. Veikiantį tinklapį galite rasti www.saimonas.96.lt.
+Knygų bazės projektas skirtas stojimui į NFQ akademiją. Veikiantį projektą internete galite rasti www.saimonas.96.lt.
