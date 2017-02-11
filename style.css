@@ -1,0 +1,55 @@
+body{
+	background-image: url("books.jpeg");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+}
+#binfo{
+	background-color: white;
+	opacity: 0.9;
+	padding: 5%;
+	border-radius: 15px;
+	text-align: center;
+	margin: 0% 30%;
+	margin-top: 10%;
+	width: 40%;
+	box-shadow: 5px 5px 5px black;
+		font-family: 'Ubuntu', sans-serif;
+}
+#header{
+	text-align: center;
+	font-size: 500%;
+	border: solid 1px white;
+	border-top: none;
+	color: #527A73;
+	font-family: 'Bahiana', cursive;
+	margin: 0% 10%;
+	padding: 5% 0%;
+}
+#blist{
+	background-color: white;
+	opacity: 0.9;
+	padding: 2% 5% 5% 5%;
+	border-radius: 0px 0px 15px 15px;
+	margin: 10% 10%;
+	margin-top: 0%;
+	box-shadow: 5px 5px 5px black;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 150%;
+	transition: 1s;
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+    border-bottom: 1px solid grey;
+}
+a:hover{
+	color: #527A73;
+	transition: 1s;
+}
