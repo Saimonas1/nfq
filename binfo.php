@@ -12,7 +12,7 @@
 <?php
 	$val = $_GET['val'] - 1; // knygos ID gautas iš index PHP.
 	// Jungiamės prie DB.
-	$conn = new mysqli("mysql.hostinger.lt", "u378777602_saimo", "ruhamalt", "u378777602_saimo");
+	$conn = new mysqli("mysql.hostinger.lt", "dbuser", "dbpass", "dbpav");
 	// Tikrina ar prisijungta.
 	if ($conn->connect_error) {
 		die("Prisijungimo klaida: " . $conn->connect_error);
