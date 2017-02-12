@@ -1,0 +1,52 @@
+-- MySQL dump 10.15  Distrib 10.0.28-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: localhost
+-- ------------------------------------------------------
+-- Server version	10.0.28-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `knygos`
+--
+
+DROP TABLE IF EXISTS `knygos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `knygos` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `pavadinimas` text COLLATE utf8_unicode_ci NOT NULL,
+  `metai` int(4) NOT NULL,
+  `autorius` text COLLATE utf8_unicode_ci NOT NULL,
+  `zanras` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `knygos`
+--
+
+/*!40000 ALTER TABLE `knygos` DISABLE KEYS */;
+INSERT INTO `knygos` VALUES (1,'Tobulas kūnas',2016,'Andrius Pauliukevičius','savišvieta'),(2,'Tobulesnis kūnas',2017,'Andrius Pauliukevičius','savišvieta'),(3,'Laimingi šunsnukiai',2016,'Alex Monaco','savišvieta'),(4,'Haris Poteris ir išminties akmuo',1997,'J.K. Rowling','apysaka'),(5,'Haris Poteris ir paslapčių kambarys',1998,'J.K. Rowling','apysaka'),(6,'Haris Poteris ir Azkabano kambarys',1999,'J.K. Rowling','apysaka'),(7,'Haris Poteris ir ugnies taurė',2000,'J.K. Rowling','apysaka'),(8,'Haris Poteris ir fenikso brolija',2003,'J.K. Rowling','apysaka'),(9,'Haris Poteris ir netikras princas',2005,'J.K. Rowling','apysaka'),(10,'Haris Poteris ir mirties relikvijos',2007,'J.K. Rowling','apysaka'),(11,'Balta drobulė',1958,'Antanas Škėma','romanas'),(12,'Dievų miškas',1957,'Balys Sruoga','memuarų knyga'),(13,'Hamletas',1600,'Viljamas Šekspyras','drama'),(14,'Lobių sala',1883,'Robertas Luisas Stevensas','nuotykių'),(15,'20000 mylių po vandeniu',1869,'Žiulis Vernas','nuotykių'),(16,'Kelionė į Žemės centrą',1864,'Žiulis Vernas','fantastinis nuotykių romanas'),(17,'Penkios savaitės oro balionu',1863,'Žiulis Vernas','nuotykių romanas'),(18,'Aplink pasaulį per 80 dienų',1873,'Žiulis Vernas','nuotykių romanas'),(19,'Kalėdų giesmė',1843,'Čerlzas Dikensas','novelė'),(20,'Oliverio Tvisto nuotykiai',1838,'Čerlzas Dikensas','novelė'),(21,'Mūsų bendras draugas',1865,'Čerlzas Dikensas','novelė'),(22,'Deividas Koperfieldas',1849,'Čerlzas Dikensas','novelė'),(23,'Pepė ilgakojinė',1945,'Astrida Lingrend','pasaka'),(24,'Karlsonas kuris gyvena ant stogo',1955,'Astrida Lingrend','pasaka'),(25,'Karas ir Taika',1869,'Levas Tolstojus','istorinis, romantinis'),(26,'Ana Karenina',1877,'Levas Tolstojus','romanas'),(27,'Mobis Dikas',1851,'Hermanas Melvilis','romanas'),(28,'Don Kichotas',1605,'Migelis Servantesas','novelė'),(29,'Nusikaltimas ir bausmė',1866,'Fiodoras Dostojevskis','psichologinis romanas'),(30,'Broliai Karamazovai',1880,'Fiodoras Dostojevskis','romanas'),(31,'Idiotas',1867,'Fiodoras Dostojevskis','romanas'),(32,'Altorių šešėly',1933,'Vincas Mykolaitis-Putinas','psichologinis romanas'),(33,'Metai',1818,'Kristijonas Donelaitis','poema'),(34,'Hakelberio Fino nuotykiai',1884,'Markas Tvenas','satyrinė novelė'),(35,'Alisa stebuklų šalyje',1865,'Lewis Carol','pasaka'),(36,'Tukstantis ir viena naktis',1880,'Indija/Iranas/Irakas/Egiptas',''),(37,'Guliverio kelionės',1726,'Džonatanas Sviftas','fantastika'),(38,'Nematomas žmogus',1952,'Ralfas Elisonas','novelė'),(39,'Keistuolis',1946,'Albertas Kamiu','novelė'),(40,'Magiškieji kalnai',1924,'Thomas Mann','novelė'),(41,'Mirusios sielos',1842,'Nikolai Gogol','novelė'),(42,'Metamorfozė',1915,'Franas Kafka','novelė'),(43,'Vidurnakčio vaikai',1981,'Salman Rushdie','magiškasis realizmas'),(44,'Frankenšteinas',1818,'Mary Shelley','gotinė novelė'),(45,'Senis ir jūra',1951,'Ernestas Hemingvėjus','novelė'),(46,'Pilis',1926,'Franas Kafka','novelė'),(47,'Ernesto Hemingvėjaus istorijos',1938,'Ernestas Hemingvėjus','trumpos istorijos'),(48,'Robinzonas Kruzas',1719,'Danielis Defo','novelė'),(49,'Tėvai ir sūnūs',1862,'Ivan Turgeven','novelė'),(50,'Žarija pelenuosa',2016,'Saaba Tehir','romanas');
+/*!40000 ALTER TABLE `knygos` ENABLE KEYS */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-02-12 16:53:23
