@@ -13,7 +13,7 @@
 <h2 style="color: #527A73; font-family: 'Ubuntu', sans-serif; transition: 1s;">Paieškos rezultatai:</h2>
 <?php
 // Jungiames prie DB.
-$conn = new mysqli("mysql.hostinger.lt", "u378777602_saimo", "ruhamalt", "u378777602_saimo");
+$conn = new mysqli("mysql.hostinger.lt", "dbuser", "dbpass", "dbpav");
 // Tikrina ar prisijungta.
 if ($conn->connect_error) {
     die("Prisijungimo klaida: " . $conn->connect_error);
